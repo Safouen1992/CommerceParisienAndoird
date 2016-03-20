@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activites.AccueilUser"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/logo"
+                    android:src="@drawable/logo"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Le Commerce Parisien"
+                    android:id="@+id/titre"
+                    android:textAlignment="center"
+                    android:padding="28dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic"
+                    android:editable="false"
+                    android:background="#ffffff"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Offres "
+                    android:id="@+id/offres"
+                    android:enabled="true"
+                    android:clickable="true" />
+
+                <Button
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ajout"
+                    android:text="Ajouter annonce"
+                    android:clickable="true"
+                    android:enabled="true" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mes annonces"
+                    android:id="@+id/mesannonces"
+                    android:clickable="true"
+                    android:enabled="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Rechercher Annonce "
+                    android:id="@+id/recherche"
+                    android:clickable="true"
+                    android:enabled="true" />
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/annonces" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
